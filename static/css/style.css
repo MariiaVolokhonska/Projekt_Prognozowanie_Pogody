@@ -1,0 +1,119 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #1a5897, #6aa9e9); /* Градиент синего */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+
+.in-nav {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.smth{
+    display:flex;
+    align-items: center;
+    gap: 8px;
+}
+.smth form {
+    display: inline; 
+}
+
+.smth button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.in-nav li {
+    margin: 0 15px;
+}
+
+
+.in-nav li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.in-nav li a:hover {
+    background-color: #00629b; 
+}
+
+
+
+
+
+form.in-nav {
+    display: flex;
+    align-items: center;
+   
+}
+
+
+form.in-nav input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+form.in-nav button {
+    background-color: #1e6f9f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+
+form.in-nav button:hover {
+    background-color: #1482c1;
+}
+
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(11, 97, 236); 
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.weather-item{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+

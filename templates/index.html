@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="{{url_for('static', filename='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700')}}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='fonts/icomoon/style.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+    <title>HomePage</title>
+  </head>
+  <body>
+
+            <nav class="navbar">
+              <ul class="in-nav">
+                  <li><a href="{{ url_for('home') }}" class="active">Dzisiaj</a></li>
+                  <li><a href="{{ url_for('show_forcast', days=7) }}">7 dni</a></li>
+                  <li><a href="{{ url_for('show_forcast', days=14) }}">14 dni</a></li>
+                 
+                  
+              </ul>
+              <form method="POST" class="in-nav">
+                <input type="text" name="miasto" placeholder="Wprowadz miasto">
+                <button type="submit">Submit</button>
+              </form>
+          </nav>
+          </div>
+
+
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+
+
+
+
+  <article>
+    <div class="weather">
+      <div class="weather-item">
+        Data: {{date}}
+      </div>
+      <div class="weather-item">
+        Temperatura maksymalna: {{max_temp}}
+      </div>
+      <div class="weather-item">
+        Temperatura minimalna: {{min_temp}}
+      </div>
+      <div class="weather-item">
+        Wilgotność: {{humidity}}
+      </div>
+      <div class="weather-item">
+        Cisnienie: {{pressure}}
+      </div>
+    </div>
+  </article>
+       
+
+ 
+    
+  
+
+    
+    
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
